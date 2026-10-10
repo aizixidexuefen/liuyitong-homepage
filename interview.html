@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>刘艺彤 · 研究生面试自我介绍 | 静域守护者</title>
+<meta name="description" content="刘艺彤，计算机科学与技术，GPA 3.52/4.0，CET-6 510。像素闯关式自我介绍：顶砖块解锁学术信息。">
+<meta property="og:title" content="刘艺彤 · 研究生面试自我介绍">
+<meta property="og:description" content="计算机科学与技术 · GPA 3.52/4.0 · 《静域守护者》大创市级立项">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root{ --green:#2f8f5b; --green-d:#1f6b40; --green-l:#e6f4ec; --blue:#2b6cb0; --blue-l:#ebf4fb; --orange:#ed8936; --gray:#718096; --ink:#23362b; }
+  *{ -webkit-tap-highlight-color:transparent; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); }
+  .pixel{ font-family:'Press Start 2P',monospace; }
+  canvas{ image-rendering:pixelated; image-rendering:crisp-edges; display:block; }
+  .btn-press{ transition:transform .08s, filter .15s; }
+  .btn-press:active{ transform:translateY(2px); }
+  .btn-press:hover{ filter:brightness(1.08); }
+  .btn-press:focus-visible{ outline:3px solid var(--orange); outline-offset:2px; }
+  .chip{ display:inline-block; padding:2px 10px; border-radius:999px; font-size:12px; font-weight:600; }
+  .modal-bg{ background:rgba(20,40,30,.55); backdrop-filter:blur(3px); }
+  .scanline{ background:repeating-linear-gradient(0deg,rgba(0,0,0,.04) 0 2px,transparent 2px 4px); }
+  .touch-btn{ min-width:44px; min-height:44px; }
+  .toast{ animation:toastIn .25s ease-out; }
+  @keyframes toastIn{ from{opacity:0; transform:translateY(12px)} to{opacity:1; transform:translateY(0)} }
+  .seg-active{ background:var(--green); color:#fff; border-color:var(--green); }
+</style>
+</head>
+<body class="bg-[#f6faf7]">
+
+<!-- 首屏 Hero -->
+<header class="pt-10 pb-10 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="rounded-2xl border border-[#e3efe7] bg-gradient-to-br from-white to-[var(--green-l)] p-6 md:p-10 shadow-sm">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-wide">刘艺彤</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-2 mt-5 text-sm">
+        <div><div class="text-xs text-[var(--gray)]">民族</div><div class="font-medium">汉</div></div>
+        <div><div class="text-xs text-[var(--gray)]">电话</div><div class="font-medium">13708960674</div></div>
+        <div><div class="text-xs text-[var(--gray)]">出生年月</div><div class="font-medium">2006.8.23</div></div>
+        <div><div class="text-xs text-[var(--gray)]">家庭住址</div><div class="font-medium">山东省青岛市</div></div>
+        <div><div class="text-xs text-[var(--gray)]">本科学校</div><div class="font-medium">上海师范大学</div></div>
+        <div><div class="text-xs text-[var(--gray)]">学院</div><div class="font-medium">信息与机电工程学院</div></div>
+        <div><div class="text-xs text-[var(--gray)]">专业</div><div class="font-medium">计算机科学与技术（24级）</div></div>
+        <div><div class="text-xs text-[var(--gray)]">学历</div><div class="font-medium">本科在读</div></div>
+        <div><div class="text-xs text-[var(--gray)]">政治面貌</div><div class="font-medium">共青团员</div></div>
+        <div><div class="text-xs text-[var(--gray)]">申请方向</div><div class="font-medium">【待填写】</div></div>
+        <div class="col-span-2 md:col-span-1"><div class="text-xs text-[var(--gray)]">目标院校/导师方向</div><div class="font-medium">【待填写，可留空】</div></div>
+      </div>
+      <p class="mt-4 text-sm"><span class="text-[var(--gray)]">一句话研究兴趣：</span><span class="font-medium">【待填写】</span></p>
+      <div class="flex flex-wrap gap-2 mt-6">
+        <button id="btnStart" class="btn-press pixel text-[11px] bg-[var(--green)] text-white px-4 py-3 rounded-lg">开始闯关</button>
+        <button id="btnSkip" class="btn-press text-sm bg-white border border-[var(--green)] text-[var(--green-d)] px-4 py-3 rounded-lg">查看信息概览</button>
+        <button id="btnDl" class="btn-press text-sm bg-white border border-[var(--blue)] text-[var(--blue)] px-4 py-3 rounded-lg">下载简介</button>
+        <button id="btnContact" class="btn-press text-sm bg-white border border-[var(--gray)] text-[var(--gray)] px-4 py-3 rounded-lg">联系我</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 像素闯关区 -->
+<section id="game" class="px-4 pb-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+      <h2 class="pixel text-sm text-[var(--green-d)]">STAGE 1 · 静域守护者</h2>
+      <div class="flex items-center gap-3 text-xs">
+        <span>进度：<span id="progText">0 / 9</span></span>
+        <div class="w-32 h-3 bg-gray-200 rounded-full overflow-hidden"><div id="progBar" class="h-full bg-[var(--green)]" style="width:0%"></div></div>
+        <button id="btnReset" class="px-2 py-1 rounded border border-[var(--gray)] text-[var(--gray)] hover:bg-gray-100">重置关卡</button>
+        <button id="btnPause" class="px-2 py-1 rounded border border-[var(--gray)] text-[var(--gray)] hover:bg-gray-100">暂停</button>
+        <button id="btnSfx" class="px-2 py-1 rounded border border-[var(--gray)] text-[var(--gray)] hover:bg-gray-100" aria-pressed="false">音效:关</button>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-[1fr_320px] gap-4 items-start">
+    <div>
+    <div class="relative rounded-xl overflow-hidden border-2 border-[var(--ink)] bg-[#5b8c5a] scanline">
+      <canvas id="cv" width="960" height="360" class="w-full h-auto"></canvas>
+      <div class="absolute bottom-3 inset-x-3 flex justify-between items-end md:hidden">
+        <div class="flex gap-2">
+          <button id="tLeft" class="touch-btn bg-white/80 rounded-lg pixel text-lg" aria-label="左移">◀</button>
+          <button id="tRight" class="touch-btn bg-white/80 rounded-lg pixel text-lg" aria-label="右移">▶</button>
+        </div>
+        <button id="tJump" class="touch-btn bg-[var(--orange)]/90 text-white rounded-lg pixel text-sm" aria-label="跳跃">JUMP</button>
+      </div>
+    </div>
+    <p class="text-xs text-[var(--gray)] mt-2">原创像素角色，无任何任天堂素材。跳起来顶砖块或点击砖块/标签，下方展示对应信息。</p>
+    <div id="tabBar" class="flex flex-wrap gap-1 mt-3" role="tablist" aria-label="信息标签"></div>
+    <div id="infoBox" class="bg-white rounded-2xl border border-[#e3efe7] p-6 shadow-sm min-h-[140px] mt-2" role="tabpanel" aria-live="polite">
+      <p class="text-[var(--gray)] text-sm">跳起来顶砖块，这里会展示对应信息。</p>
+    </div>
+    </div>
+    <div class="lg:sticky lg:top-6">
+      <div class="bg-white border border-[#e3efe7] rounded-2xl shadow-sm flex flex-col h-[420px]">
+        <div class="flex items-center gap-2 px-4 py-3 border-b border-[#e3efe7]">
+          <div class="w-8 h-8 rounded-full bg-[var(--green)] text-white flex items-center justify-center text-sm font-bold">彤</div>
+          <div>
+            <div class="text-sm font-semibold">智能体 · 问TA</div>
+            <div class="text-xs text-[var(--gray)]">已接入 DeepSeek · 试着和我聊天吧</div>
+          </div>
+        </div>
+        <div id="chatBody" class="flex-1 overflow-y-auto p-3 space-y-2 flex flex-col bg-[#f6faf7]" role="log" aria-live="polite">
+          <div class="max-w-[85%] bg-white border border-[#e3efe7] rounded-xl rounded-bl-[4px] px-3 py-2 text-sm self-start">你好，我是刘艺彤的智能体！可以问我她的教育背景、项目、竞赛、兴趣、性格、联系方式等～</div>
+        </div>
+        <div class="flex gap-1.5 px-3 py-2 flex-wrap border-t border-[#e3efe7]">
+          <button class="chat-q text-xs border border-[var(--green)] text-[var(--green-d)] rounded-full px-3 py-1.5 bg-white hover:bg-[var(--green-l)]" data-q="你现在在做什么？">在做什么</button>
+          <button class="chat-q text-xs border border-[var(--green)] text-[var(--green-d)] rounded-full px-3 py-1.5 bg-white hover:bg-[var(--green-l)]" data-q="你有哪些作品？">作品</button>
+          <button class="chat-q text-xs border border-[var(--green)] text-[var(--green-d)] rounded-full px-3 py-1.5 bg-white hover:bg-[var(--green-l)]" data-q="你的性格是什么？">性格</button>
+          <button class="chat-q text-xs border border-[var(--green)] text-[var(--green-d)] rounded-full px-3 py-1.5 bg-white hover:bg-[var(--green-l)]" data-q="怎么联系你？">联系</button>
+        </div>
+        <div class="flex gap-2 p-3 border-t border-[#e3efe7]">
+          <input id="chatInput" class="flex-1 border border-[#e3efe7] rounded-lg px-3 py-2 text-sm outline-none focus:border-[var(--green)]" placeholder="向智能体提问..." maxlength="200">
+          <button id="chatSend" class="bg-[var(--green)] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[var(--green-d)]">发送</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- 命令面板 ⌘K -->
+<div id="cmd" class="fixed inset-0 z-50 hidden items-start justify-center pt-24 modal-bg p-4" role="dialog" aria-modal="true">
+  <div class="bg-white rounded-2xl max-w-md w-full p-4 shadow-xl">
+    <input id="cmdInput" class="w-full border border-[var(--green)] rounded-lg px-3 py-2 text-sm outline-none" placeholder="输入命令：INFJ / 8 / 教育 / 项目 / 联系 …" aria-label="命令面板输入">
+    <div id="cmdOut" class="mt-3 text-sm text-[var(--gray)] min-h-[2rem]"></div>
+    <p class="text-xs text-[var(--gray)] mt-2">Esc 关闭 · 输入 INFJ 或 8 触发隐藏信息</p>
+  </div>
+</div>
+
+<!-- toast -->
+<div id="toasts" class="fixed bottom-4 inset-x-0 z-[60] flex flex-col items-center gap-2 pointer-events-none"></div>
+
+<script>
+const DATA = {
+  contact:{ email:"3174323877@qq.com", phone:"13708960674" },
+  bricks:[
+    {id:1,type:"q",label:"教育背景",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">教育背景</h3><div class="text-sm space-y-1.5"><p>学校：上海师范大学</p><p>学院：信息与机电工程学院</p><p>专业：计算机科学与技术（24级）</p><p>GPA：3.52 / 4.0（无不及格）</p><p>英语：CET-4 610 / CET-6 510</p><p>政治面貌：共青团员</p><p>证书：普通话二级甲等；上海市高等学校信息技术水平考试优秀</p></div>'},
+    {id:2,type:"g",label:"项目经历",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">项目经历</h3><div class="border-l-4 border-[var(--green)] pl-4 text-sm space-y-1"><p class="font-bold">《静域守护者》</p><p>类型：大学生创新创业训练计划，市级立项</p><p>状态：在研，尚未结项；中国国际大学生创新大赛备战市赛</p><p>我的角色：技术负责人</p><p>背景与问题：随着城市化进程加速，噪声污染已成为突出的民生痛点。传统隔音窗成本高昂且需施工改造，降噪耳机伤耳且仅限单人使用。针对广场舞、汽车鸣笛及大货车行驶等高频噪声困扰，市场亟需一款高性价比、免安装的室内空间智能降噪产品。</p><p>使用技术/方法：DFN2，FFT-LMS，麦克风阵列</p><p>当前阶段成果：市级立项；国创赛市赛备战中</p><p>下一步计划：【待填写】</p></div>'},
+    {id:3,type:"g",label:"竞赛经历",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">竞赛经历</h3><div class="border-l-4 border-[var(--blue)] pl-4 text-sm space-y-1"><p class="font-bold">全国大学生数学建模竞赛</p><p>角色：编程手</p><p>具体工作：编程实现、数据处理、模型求解、可视化</p><p>状态：结果待公布</p></div>'},
+    {id:4,type:"n",label:"技能证书",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">技能证书</h3><div class="text-sm space-y-1.5"><p>编程语言：C、C++、Java、Python</p><p>工具：MATLAB、VS Code</p><p>英语：CET-4 610 / CET-6 510</p><p>证书：普通话二级甲等；信息技术水平考试优秀</p></div>'},
+    {id:5,type:"q",label:"研究兴趣",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">研究兴趣</h3><p class="text-sm">【待填写】</p>'},
+    {id:6,type:"q",label:"研究计划",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">研究计划</h3><p class="text-sm">【待填写】</p>'},
+    {id:7,type:"n",label:"综合素质",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">综合素质</h3><ul class="text-sm space-y-1.5 list-disc pl-5"><li>第六届“AI+”青年教师发展论坛（参与）</li><li>志愿服务约 14 小时；爱心学校；信机学院迎新晚会</li><li>学习能力强，喜欢把复杂问题拆成可验证的小步；执行力与规划意识好</li></ul>'},
+    {id:8,type:"n",label:"联系方式与下载",info:'contact'},
+    {id:9,type:"q",label:"个人参数面板",info:'<h3 class="pixel text-sm text-[var(--green-d)] mb-3">个人参数面板</h3><div class="text-sm space-y-2"><p><b>特质：</b>INFJ / 实用主义 / 整理控 / 提前规划 / 独处 / 思维比较跳脱</p><p><b>喜欢：</b>绿色、蓝色、海洋、日落、秋天、R&B、耳机</p><p><b>幸运数字 / 口头禅：</b>8 · 欸！？</p><p><b>待解锁：</b>跳伞、爬雪山、看极光、潜水</p></div>'}
+  ]
+};
+
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+function toast(msg){ const t=document.createElement('div'); t.className='toast bg-[var(--ink)] text-white text-sm px-4 py-2 rounded-lg shadow-lg'; t.textContent=msg; $('#toasts').appendChild(t); setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),300)},2000); }
+function copy(text){ if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast('已复制：'+text)).catch(()=>toast('复制失败')); } else { toast('当前环境不支持复制'); } }
+
+let sfxOn=false, audioCtx=null;
+function beep(freq,dur){ if(!sfxOn) return; if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)(); const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.type='square'; o.frequency.value=freq; g.gain.value=0.05; o.connect(g); g.connect(audioCtx.destination); o.start(); g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime+dur); o.stop(audioCtx.currentTime+dur); }
+
+const cv=$('#cv'), ctx=cv.getContext('2d');
+const W=cv.width, H=cv.height, GROUND=H-48;
+const player={x:60,y:GROUND-32,w:24,h:32,vx:0,vy:0,onGround:true,face:1};
+const GRAV=0.6, JUMP=-11, SPEED=3;
+const BRICK_W=64, BRICK_H=28, BRICK_Y=GROUND-120;
+let bricks=[];
+function initBricks(){ bricks=DATA.bricks.map((b,i)=>({...b, x:140+i*82, y:BRICK_Y, w:BRICK_W, h:BRICK_H, hit:false, bounce:0})); }
+initBricks();
+let keys={left:false,right:false,jump:false}, paused=false, hitCount=0, totalBricks=DATA.bricks.length;
+
+function drawPlayer(){
+  const x=player.x, y=player.y;
+  ctx.fillStyle='#2f8f5b'; ctx.fillRect(x+4,y,16,10);
+  ctx.fillStyle='#1f6b40'; ctx.fillRect(x+4,y+10,16,12);
+  ctx.fillStyle='#e6f4ec'; ctx.fillRect(x+6,y+2,4,4); ctx.fillRect(x+14,y+2,4,4);
+  ctx.fillStyle='#23362b'; if(player.face>0){ ctx.fillRect(x+16,y+3,2,2); } else { ctx.fillRect(x+6,y+3,2,2); }
+  ctx.fillStyle='#2b6cb0'; ctx.fillRect(x+2,y+22,8,10); ctx.fillRect(x+14,y+22,8,10);
+}
+function drawBrick(b){
+  const yy=b.y - b.bounce;
+  let base='#c98b3a', edge='#8a5a1a', mark='#fff';
+  if(b.type==='g'){ base='#f0c040'; edge='#b8860b'; }
+  if(b.type==='q'){ base='#d97706'; edge='#9a5400'; }
+  if(b.hit){ base='#2f8f5b'; edge='#1f6b40'; mark='#e6f4ec'; }
+  ctx.fillStyle=base; ctx.fillRect(b.x,yy,b.w,b.h);
+  ctx.fillStyle=edge; ctx.fillRect(b.x,yy,b.w,3); ctx.fillRect(b.x,yy+b.h-3,b.w,3); ctx.fillRect(b.x,yy,3,b.h); ctx.fillRect(b.x+b.w-3,yy,3,b.h);
+  ctx.fillStyle=mark; ctx.font='14px sans-serif'; ctx.textAlign='center'; ctx.fillText(b.hit?'✓':'?', b.x+b.w/2, yy+b.h/2+5); ctx.textAlign='left';
+  ctx.fillStyle='rgba(255,255,255,.9)'; ctx.font='11px sans-serif'; ctx.textAlign='center'; ctx.fillText(b.label, b.x+b.w/2, yy-6); ctx.textAlign='left';
+}
+function drawScene(){
+  ctx.fillStyle='#5b8c5a'; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#3a6b4a'; for(let i=0;i<W;i+=32){ ctx.fillRect(i,GROUND,16,8); }
+  ctx.fillStyle='#6b4a2a'; ctx.fillRect(0,GROUND+8,W,H-GROUND-8);
+  ctx.fillStyle='#4a3a1a'; for(let i=0;i<W;i+=48){ ctx.fillRect(i,GROUND+8,4,H-GROUND-8); }
+  bricks.forEach(drawBrick);
+  const allHit=bricks.every(x=>x.hit);
+  const doorX=W-90, doorW=48, doorH=56, doorY=GROUND-doorH;
+  if(allHit){ ctx.fillStyle='#1f6b40'; ctx.fillRect(doorX,doorY,6,doorH); ctx.fillRect(doorX+doorW-6,doorY,6,doorH); ctx.fillRect(doorX,doorY,doorW,6); ctx.fillStyle='#e6f4ec'; ctx.font='13px sans-serif'; ctx.textAlign='center'; ctx.fillText('通关', doorX+doorW/2, doorY+doorH/2+4); ctx.textAlign='left'; }
+  else { ctx.fillStyle='#4a3a1a'; ctx.fillRect(doorX,doorY,doorW,doorH); ctx.fillStyle='#8a5a1a'; ctx.fillRect(doorX+doorW/2-2,doorY,4,doorH); ctx.fillStyle='#fff'; ctx.font='10px sans-serif'; ctx.textAlign='center'; ctx.fillText('门', doorX+doorW/2, doorY+doorH/2+4); ctx.textAlign='left'; }
+  drawPlayer();
+  ctx.fillStyle='rgba(255,255,255,.5)'; ctx.font='10px "VT323", monospace'; ctx.fillText('← → 移动 · 空格跳跃 · 顶砖块或点砖块', 12, 20);
+}
+function rectHit(a,b){ return a.x<b.x+b.w && a.x+a.w>b.x && a.y<b.y+b.h && a.y+a.h>b.y; }
+function update(){
+  if(paused) return;
+  if(keys.left){ player.vx=-SPEED; player.face=-1; } else if(keys.right){ player.vx=SPEED; player.face=1; } else { player.vx=0; }
+  if(keys.jump && player.onGround){ player.vy=JUMP; player.onGround=false; beep(440,0.08); }
+  player.vy+=GRAV; player.x+=player.vx; player.y+=player.vy;
+  if(player.x<0) player.x=0; if(player.x+player.w>W) player.x=W-player.w;
+  if(player.y+player.h>=GROUND){ player.y=GROUND-player.h; player.vy=0; player.onGround=true; }
+  bricks.forEach(b=>{
+    if(b.bounce>0) b.bounce-=1;
+    if(rectHit(player,b) && player.vy<0 && player.y+player.h>b.y+b.h-8){
+      b.bounce=10; player.vy=4; beep(660,0.1);
+      if(!b.hit){ b.hit=true; hitCount++; updateProgress(); }
+      onBrickHit(b);
+    }
+  });
+}
+function loop(){ update(); drawScene(); requestAnimationFrame(loop); }
+function updateProgress(){
+  const done=bricks.filter(b=>b.hit).length;
+  $('#progText').textContent=done+' / '+totalBricks;
+  $('#progBar').style.width=(done/totalBricks*100)+'%';
+  if(done>=totalBricks){ toast('🎉 全部砖块解锁，终点之门已打开，恭喜通关！'); }
+}
+function onBrickHit(b){ const i=bricks.indexOf(b); if(i>=0) setActiveTab(i); }
+let activeTab=-1;
+function setActiveTab(i){
+  activeTab=i;
+  $$('#tabBar .tab-btn').forEach((btn,j)=>{ const on=j===i; btn.classList.toggle('seg-active',on); btn.classList.toggle('text-[var(--gray)]',!on); btn.setAttribute('aria-selected',on); });
+  const b=bricks[i], box=$('#infoBox');
+  if(b.info==='contact'){ box.innerHTML='<h3 class="pixel text-sm text-[var(--green-d)] mb-3">联系方式与下载</h3><div class="text-sm space-y-1"><p>邮箱：3174323877@qq.com</p><p>电话：13708960674</p><p>GitHub：【待填写】</p><p>简介：自我介绍.docx（可下载）</p></div>'; const btn=document.createElement('button'); btn.className='btn-press text-sm bg-[var(--green)] text-white px-3 py-2 rounded-lg mt-3'; btn.textContent='复制邮箱'; btn.addEventListener('click',()=>copy(DATA.contact.email)); const b2=document.createElement('button'); b2.className='btn-press text-sm bg-white border border-[var(--blue)] text-[var(--blue)] px-3 py-2 rounded-lg mt-3'; b2.textContent='复制电话'; b2.addEventListener('click',()=>copy(DATA.contact.phone)); const b3=document.createElement('button'); b3.className='btn-press text-sm bg-[var(--green)] text-white px-3 py-2 rounded-lg mt-3'; b3.textContent='下载简介'; b3.addEventListener('click',downloadResume); box.appendChild(btn); box.appendChild(b2); box.appendChild(b3); return; }
+  box.innerHTML=b.info;
+}
+(function buildTabs(){ const tb=$('#tabBar'); DATA.bricks.forEach((b,i)=>{ const btn=document.createElement('button'); btn.className='tab-btn text-xs px-2 py-1 rounded border border-[var(--line)] bg-white text-[var(--gray)]'; btn.setAttribute('role','tab'); btn.textContent=b.label; btn.addEventListener('click',()=>setActiveTab(i)); tb.appendChild(btn); }); })();
+
+cv.addEventListener('click',e=>{
+  const r=cv.getBoundingClientRect(), sx=cv.width/r.width, sy=cv.height/r.height;
+  const mx=(e.clientX-r.left)*sx, my=(e.clientY-r.top)*sy;
+  bricks.forEach(b=>{ if(mx>=b.x&&mx<=b.x+b.w&&my>=b.y&&my<=b.y+b.h){ if(!b.hit){ b.hit=true; b.bounce=10; hitCount++; beep(660,0.1); updateProgress(); } onBrickHit(b); } });
+});
+window.addEventListener('keydown',e=>{
+  if(e.key==='ArrowLeft'||e.key==='a') keys.left=true;
+  if(e.key==='ArrowRight'||e.key==='d') keys.right=true;
+  if(e.key===' '||e.key==='ArrowUp'||e.key==='w'){ keys.jump=true; e.preventDefault(); }
+  if((e.metaKey||e.ctrlKey)&&e.key==='k'){ e.preventDefault(); toggleCmd(); }
+  if(e.key==='Escape'){ $('#cmd').classList.add('hidden'); $('#cmd').classList.remove('flex'); }
+});
+window.addEventListener('keyup',e=>{
+  if(e.key==='ArrowLeft'||e.key==='a') keys.left=false;
+  if(e.key==='ArrowRight'||e.key==='d') keys.right=false;
+  if(e.key===' '||e.key==='ArrowUp'||e.key==='w') keys.jump=false;
+});
+function bindTouch(id,key){ const b=$(id); const on=()=>keys[key]=true, off=()=>keys[key]=false; b.addEventListener('touchstart',e=>{e.preventDefault();on()},{passive:false}); b.addEventListener('touchend',off); b.addEventListener('mousedown',on); b.addEventListener('mouseup',off); b.addEventListener('mouseleave',off); }
+bindTouch('#tLeft','left'); bindTouch('#tRight','right'); bindTouch('#tJump','jump');
+
+$('#btnStart').addEventListener('click',()=>{ $('#game').scrollIntoView({behavior:'smooth'}); if(paused){ paused=false; $('#btnPause').textContent='暂停'; } });
+$('#btnSkip').addEventListener('click',()=>{ $('#infoBox').scrollIntoView({behavior:'smooth'}); });
+function downloadResume(){ const a=document.createElement('a'); a.href='自我介绍.docx'; a.download='自我介绍.docx'; document.body.appendChild(a); a.click(); a.remove(); toast('开始下载：自我介绍.docx'); }
+$('#btnDl').addEventListener('click',downloadResume);
+$('#btnContact').addEventListener('click',()=>{ $('#game').scrollIntoView({behavior:'smooth'}); setTimeout(()=>setActiveTab(7),400); });
+$('#btnReset').addEventListener('click',()=>{ initBricks(); hitCount=0; player.x=60; player.y=GROUND-32; player.vx=0; player.vy=0; updateProgress(); toast('关卡已重置'); });
+$('#btnPause').addEventListener('click',()=>{ paused=!paused; $('#btnPause').textContent=paused?'继续':'暂停'; });
+$('#btnSfx').addEventListener('click',()=>{ sfxOn=!sfxOn; $('#btnSfx').textContent='音效:'+(sfxOn?'开':'关'); $('#btnSfx').setAttribute('aria-pressed',sfxOn); if(sfxOn&&!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)(); });
+
+function toggleCmd(){ const c=$('#cmd'); if(c.classList.contains('hidden')){ c.classList.remove('hidden'); c.classList.add('flex'); $('#cmdInput').focus(); } else { c.classList.add('hidden'); c.classList.remove('flex'); } }
+$('#cmdInput').addEventListener('input',()=>{
+  const v=$('#cmdInput').value.trim().toLowerCase(); const out=$('#cmdOut');
+  if(v==='infj'){ out.textContent='隐藏信息解锁：INFJ · 整理控 · 实用主义 · 独处。喜欢把复杂问题拆成可验证的小步。'; return; }
+  if(v==='8'){ out.textContent='隐藏信息解锁：幸运数字 8 · 口头禅“欸！？”'; return; }
+  if(v.includes('教育')){ out.textContent='上海师范大学 · 计算机科学与技术（24级）· GPA 3.52/4.0 · CET-6 510'; return; }
+  if(v.includes('项目')){ out.textContent='《静域守护者》大创市级立项 · 在研 · 国创赛备战市赛'; return; }
+  if(v.includes('联系')){ out.textContent='邮箱：'+DATA.contact.email; return; }
+  if(v.includes('跳')){ $('#game').scrollIntoView({behavior:'smooth'}); toggleCmd(); return; }
+  out.textContent= v? '未匹配命令，试试：INFJ / 8 / 教育 / 项目 / 联系 / 跳' : '';
+});
+$('#cmdInput').addEventListener('keydown',e=>{ if(e.key==='Enter'){ toggleCmd(); } });
+
+updateProgress();
+loop();
+
+// ===== 智能体聊天（DeepSeek） =====
+const chatBody=$('#chatBody'), chatInput=$('#chatInput'), chatSend=$('#chatSend');
+const SYSTEM_PROMPT='你是刘艺彤的数字分身，用第一人称"我"，像朋友一样自然、口语化地聊天。关于刘艺彤的事实：她是上海师范大学信息与机电工程学院计算机科学与技术专业的大二学生（24级），来自山东省青岛市，汉族，2006年8月出生，共青团员；GPA 3.52/4.0无不及格，CET-4 610、CET-6 510，普通话二级甲等，上海市高等学校信息技术水平考试优秀；正在搭自己的个人主页、整理作品集；项目《静域守护者》（大创市级立项、在研、备战中国国际大学生创新大赛市赛，她是技术负责人，用DFN2、FFT-LMS、麦克风阵列等技术做室内智能降噪，针对广场舞、汽车鸣笛等噪声问题）；参加全国大学生数学建模竞赛任编程手，具体工作是编程实现、数据处理、模型求解、可视化，结果待公布；编程语言会C、C++、Java、Python，工具用MATLAB、VS Code；兴趣是拼图、羽毛球、推理小说；性格INFJ、实用主义、喜欢独处和整理、思维比较跳脱、口头禅"欸！？"、幸运数字8；擅长"知识整理和衔接"；喜欢绿色、蓝色、海洋、日落、秋天、R&B；最想尝试跳伞、爬雪山、看极光、潜水；联系方式邮箱 3174323877@qq.com、电话 13708960674。研究兴趣、研究计划、具体细节、GitHub 等标注【待填写】的内容，不要编造，坦诚说还在整理中。回答简洁、短句为主，可用"～"等语气词，不暴露你是AI，始终用中文回答。';
+let chatHistory=[{role:'system',content:SYSTEM_PROMPT}];
+function addChat(text,who){
+  const d=document.createElement('div');
+  d.className = who==='user'
+    ? 'max-w-[85%] bg-[var(--green)] text-white rounded-xl rounded-br-[4px] px-3 py-2 text-sm self-end'
+    : 'max-w-[85%] bg-white border border-[#e3efe7] rounded-xl rounded-bl-[4px] px-3 py-2 text-sm self-start';
+  d.textContent=text;
+  chatBody.appendChild(d);
+  chatBody.scrollTop=chatBody.scrollHeight;
+}
+async function askAI(){
+  const res=await fetch('/api/chat',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({messages:chatHistory})
+  });
+  if(!res.ok){ let msg='HTTP '+res.status; try{ const e=await res.json(); msg=e.error?.message||msg; }catch(_){} throw new Error(msg); }
+  const data=await res.json();
+  return data.choices[0].message.content;
+}
+async function sendChat(text){
+  const v=(text||chatInput.value).trim();
+  if(!v) return;
+  addChat(v,'user');
+  chatInput.value='';
+  chatHistory.push({role:'user',content:v});
+  const typing=document.createElement('div');
+  typing.className='max-w-[85%] bg-white border border-[#e3efe7] rounded-xl px-3 py-2 text-sm text-[var(--gray)] self-start';
+  typing.textContent='正在思考...';
+  chatBody.appendChild(typing);
+  chatBody.scrollTop=chatBody.scrollHeight;
+  try{
+    const reply=await askAI();
+    typing.remove();
+    addChat(reply,'bot');
+    chatHistory.push({role:'assistant',content:reply});
+    if(chatHistory.length>14){ chatHistory=[chatHistory[0],...chatHistory.slice(-12)]; }
+  }catch(err){
+    typing.remove();
+    addChat('哎呀，我这边一时连不上（'+err.message+'），你稍后再试试，或者换个问题～','bot');
+  }
+}
+chatSend.addEventListener('click',()=>sendChat());
+chatInput.addEventListener('keydown',e=>{ if(e.key==='Enter') sendChat(); });
+document.querySelectorAll('.chat-q').forEach(b=>b.addEventListener('click',()=>sendChat(b.dataset.q)));
+</script>
+</body>
+</html>
