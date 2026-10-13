@@ -102,7 +102,7 @@
           </div>
         </div>
         <div id="chatBody" class="flex-1 overflow-y-auto p-3 space-y-2 flex flex-col bg-[#f6faf7]" role="log" aria-live="polite">
-          <div class="max-w-[85%] bg-white border border-[#e3efe7] rounded-xl rounded-bl-[4px] px-3 py-2 text-sm self-start">你好，我是刘艺彤的智能体！可以问我她的教育背景、项目、竞赛、兴趣、性格、联系方式等～</div>
+          <div class="max-w-[85%] bg-white border border-[#e3efe7] rounded-xl rounded-bl-[4px] px-3 py-2 text-sm self-start">你好，我是刘艺彤的智能体！可以问我她的教育背景、项目、竞赛、兴趣、性格、联系方式等。</div>
         </div>
         <div class="flex gap-1.5 px-3 py-2 flex-wrap border-t border-[#e3efe7]">
           <button class="chat-q text-xs border border-[var(--green)] text-[var(--green-d)] rounded-full px-3 py-1.5 bg-white hover:bg-[var(--green-l)]" data-q="你现在在做什么？">在做什么</button>
@@ -319,7 +319,7 @@ async function sendChat(text){
     if(chatHistory.length>14){ chatHistory=[chatHistory[0],...chatHistory.slice(-12)]; }
   }catch(err){
     typing.remove();
-    addChat('哎呀，我这边一时连不上（'+err.message+'），你稍后再试试，或者换个问题～','bot');
+    addChat('哎呀，我这边一时连不上（'+err.message+'），你稍后再试试，或者换个问题。','bot');
   }
 }
 chatSend.addEventListener('click',()=>sendChat());
